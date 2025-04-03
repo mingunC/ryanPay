@@ -1,6 +1,7 @@
 package cmgg919.membership.application.port.in;
 
-import common.SelfValidating;
+
+import cmgg919.common.SelfValidating;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

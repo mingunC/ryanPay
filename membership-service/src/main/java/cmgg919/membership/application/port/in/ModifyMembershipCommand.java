@@ -1,6 +1,6 @@
 package cmgg919.membership.application.port.in;
 
-import common.SelfValidating;
+import cmgg919.common.SelfValidating;
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

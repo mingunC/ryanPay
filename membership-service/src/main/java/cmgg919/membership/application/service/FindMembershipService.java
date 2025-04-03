@@ -1,12 +1,13 @@
 package cmgg919.membership.application.service;
 
+import cmgg919.common.UseCase;
 import cmgg919.membership.adaptor.out.persistence.MembershipJpaEntity;
 import cmgg919.membership.adaptor.out.persistence.MembershipMapper;
 import cmgg919.membership.application.port.in.FindMembershipCommand;
 import cmgg919.membership.application.port.in.FindMembershipUseCase;
 import cmgg919.membership.application.port.out.FindMembershipPort;
 import cmgg919.membership.domain.Membership;
-import common.UseCase;
+
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 

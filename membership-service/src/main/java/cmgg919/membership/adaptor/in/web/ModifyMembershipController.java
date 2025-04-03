@@ -1,11 +1,10 @@
 package cmgg919.membership.adaptor.in.web;
 
-import cmgg919.membership.application.port.in.FindMembershipCommand;
-import cmgg919.membership.application.port.in.FindMembershipUseCase;
+import cmgg919.common.WebAdapter;
 import cmgg919.membership.application.port.in.ModifyMembershipCommand;
 import cmgg919.membership.application.port.in.ModifyMembershipUseCase;
 import cmgg919.membership.domain.Membership;
-import common.WebAdapter;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

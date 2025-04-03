@@ -1,12 +1,12 @@
 package cmgg919.membership.application.service;
 
+import cmgg919.common.UseCase;
 import cmgg919.membership.adaptor.out.persistence.MembershipJpaEntity;
 import cmgg919.membership.adaptor.out.persistence.MembershipMapper;
 import cmgg919.membership.application.port.in.RegisterMembershipCommand;
 import cmgg919.membership.application.port.in.RegisterMembershipUseCase;
 import cmgg919.membership.application.port.out.RegisterMembershipPort;
 import cmgg919.membership.domain.Membership;
-import common.UseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 

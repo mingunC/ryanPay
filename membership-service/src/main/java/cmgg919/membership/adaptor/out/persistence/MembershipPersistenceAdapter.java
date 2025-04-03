@@ -1,10 +1,10 @@
 package cmgg919.membership.adaptor.out.persistence;
 
+import cmgg919.common.PersistenceAdapter;
 import cmgg919.membership.application.port.out.FindMembershipPort;
 import cmgg919.membership.application.port.out.ModifyMembershipPort;
 import cmgg919.membership.application.port.out.RegisterMembershipPort;
 import cmgg919.membership.domain.Membership;
-import common.PersistenceAdapter;
 import lombok.RequiredArgsConstructor;
 
 import static java.lang.Long.parseLong;
@@ -14,7 +14,7 @@ import static java.lang.Long.parseLong;
 public class MembershipPersistenceAdapter implements RegisterMembershipPort, FindMembershipPort, ModifyMembershipPort {
 
     private final SpringDataMembershipRepository membershipRepository;
-    private final MembershipMapper membershipMapper;
+
 
     @Override
     public MembershipJpaEntity createMembership(Membership.MembershipName membershipName, Membership.MembershipEmail membershipEmail, Membership.MembershipAddress membershipAddress, Membership.MembershipIsValid membershipIsValid, Membership.MembershipIsCorp membershipIsCorp) {

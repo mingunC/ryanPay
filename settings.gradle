@@ -1,3 +1,4 @@
 rootProject.name = 'untitled'
 include 'membership-service'
+include 'common'
 
