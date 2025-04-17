@@ -1,6 +1,6 @@
 package cmgg919.membership.adaptor.in.web;
 
-import cmgg919.common.WebAdapter;
+import com.cmgg919.common.WebAdapter;
 import cmgg919.membership.application.port.in.RegisterMembershipCommand;
 import cmgg919.membership.application.port.in.RegisterMembershipUseCase;
 import cmgg919.membership.domain.Membership;

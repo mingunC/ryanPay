@@ -1,6 +1,6 @@
 package cmgg919.membership.application.service;
 
-import cmgg919.common.UseCase;
+import com.cmgg919.common.UseCase;
 import cmgg919.membership.adaptor.out.persistence.MembershipJpaEntity;
 import cmgg919.membership.adaptor.out.persistence.MembershipMapper;
 import cmgg919.membership.application.port.in.FindMembershipCommand;

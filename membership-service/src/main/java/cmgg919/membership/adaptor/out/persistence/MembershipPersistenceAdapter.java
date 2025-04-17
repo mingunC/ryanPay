@@ -1,6 +1,6 @@
 package cmgg919.membership.adaptor.out.persistence;
 
-import cmgg919.common.PersistenceAdapter;
+import com.cmgg919.common.PersistenceAdapter;
 import cmgg919.membership.application.port.out.FindMembershipPort;
 import cmgg919.membership.application.port.out.ModifyMembershipPort;
 import cmgg919.membership.application.port.out.RegisterMembershipPort;

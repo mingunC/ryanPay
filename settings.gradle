@@ -1,4 +1,15 @@
-rootProject.name = 'untitled'
-include 'membership-service'
-include 'common'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
 
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'ryanPay'
+include 'common', 'membership-service', 'money-service'
