@@ -12,4 +12,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = 'ryanPay'
-include 'common', 'membership-service', 'money-service'
+include 'common', 'membership-service', 'banking-service'
+
+
