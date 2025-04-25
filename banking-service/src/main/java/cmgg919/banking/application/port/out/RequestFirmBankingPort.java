@@ -15,7 +15,9 @@ public interface RequestFirmBankingPort {
         FirmBankingRequest.ToBankAccountNumber toBankAccountNumber,
         FirmBankingRequest.MoneyAmount moneyAmount,
         FirmBankingRequest.FirmBankingStatus firmBankingStatus
+    );
 
-
+    FirmBankingRequestJpaEntity modifyFirmBankingRequest(
+        FirmBankingRequestJpaEntity entity
     );
 }

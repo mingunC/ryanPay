@@ -1,8 +1,9 @@
 package cmgg919.banking.adaptor.in.web;
 
-import cmgg919.banking.application.port.in.RequestFirmBankingUseCase;
+import cmgg919.banking.application.port.in.RegisterBankAccountUseCase;
 import cmgg919.banking.application.port.in.RequestFirmBankingCommand;
-import cmgg919.banking.domain.FirmBankingRequest;
+import cmgg919.banking.application.port.in.RequestFirmBankingUseCase;
+import cmgg919.banking.domain.RegisteredBankAccount;
 import com.cmgg919.common.WebAdapter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,10 +18,10 @@ public class RequestFirmBankingController {
     private final RequestFirmBankingUseCase requestFirmBankingUseCase;
 
     @PostMapping(path="/banking/firmBanking/request")
-    FirmBankingRequest registerMembership(@RequestBody RequestFirmBankingRequest request) {
-        RequestFirmBankingCommand command = RequestFirmBankingCommand.builder()
-                .toBankName(request.getToBankName())
-                .toBankAccountNumber(request.getToBankAccountNumber())
+    RegisteredBankAccount registerMembership(@RequestBody RegisterBankAccountRequest request) {
+        RequestFirmBankingUseCase command = RequestFirmBankingCommand.builder()
+                .toBankName(request.getBankName())
+                .toBankAccountNumber(request.getBankAccountNumber())
                 .fromBankName(request.getFromBankName())
                 .fromBankAccountNumber(request.getFromBankAccountNumber())
                 .moneyAmount(request.getMoneyAmount())

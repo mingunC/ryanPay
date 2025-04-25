@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Value;
 
+import java.util.UUID;
+
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class FirmBankingRequest {
 
@@ -22,6 +24,8 @@ public class FirmBankingRequest {
 
     @Getter private final int firmBankingStatus; // 0: requested 1: completed 2: failed
 
+    @Getter private final UUID uuid;
+
     public static FirmBankingRequest generateFirmBankingRequest(
         FirmBankingRequestId firmBankingRequestId,
         FromBankName fromBankName,
@@ -29,7 +33,8 @@ public class FirmBankingRequest {
         ToBankName toBankName,
         ToBankAccountNumber toBankAccountNumber,
         MoneyAmount moneyAmount,
-        FirmBankingStatus firmBankingStatus
+        FirmBankingStatus firmBankingStatus,
+        UUID uuid
     ) {
         return new FirmBankingRequest(
                 firmBankingRequestId.getFirmBankingRequestId(),
@@ -38,9 +43,8 @@ public class FirmBankingRequest {
                 toBankName.toBankName,
                 toBankAccountNumber.getToBankAccountNumber(),
                 moneyAmount.getMoneyAmount(),
-                firmBankingStatus.firmBankingStatus
-
-
+                firmBankingStatus.firmBankingStatus,
+                uuid
         );
     }
 

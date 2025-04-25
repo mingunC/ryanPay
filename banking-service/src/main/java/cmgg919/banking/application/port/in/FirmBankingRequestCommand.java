@@ -29,7 +29,7 @@ public class FirmBankingRequestCommand extends SelfValidating<FirmBankingRequest
     public FirmBankingRequestCommand(String fromBankName, String fromBankAccountNumber, String toBankName, String toBankAccountNumber, int moneyAmount) {
         this.fromBankName = fromBankName;
         this.fromBankAccountNumber = fromBankAccountNumber;
-        this.toBankName = toBankName;
+         this.toBankName = toBankName;
         this.toBankAccountNumber = toBankAccountNumber;
         this.moneyAmount = moneyAmount;
     }

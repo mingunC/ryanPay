@@ -2,9 +2,10 @@ package cmgg919.banking.application.port.in;
 
 import com.cmgg919.common.SelfValidating;
 import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
+@Builder
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class RequestFirmBankingCommand extends SelfValidating<RequestFirmBankingCommand> {

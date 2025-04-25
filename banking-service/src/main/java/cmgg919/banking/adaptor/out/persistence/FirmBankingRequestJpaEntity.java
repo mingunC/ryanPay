@@ -7,6 +7,8 @@ import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "request_firmBanking")
 @Data
@@ -27,15 +29,18 @@ public class FirmBankingRequestJpaEntity {
 
     private int moneyAmount;
 
-    private int firmBankingStatus;
+    private int firmBankingStatus; // 0: 요청, 1: 완료, 2: 실패
 
-    public FirmBankingRequestJpaEntity(String fromBankName, String fromBankAccountNumber, String toBankName, String toBankAccountNumber, int moneyAmount, int firmBankingStatus) {
+    private UUID uuid;
+
+    public FirmBankingRequestJpaEntity(String fromBankName, String fromBankAccountNumber, String toBankName, String toBankAccountNumber, int moneyAmount, int firmBankingStatus, UUID UUID) {
         this.fromBankName = fromBankName;
         this.fromBankAccountNumber = fromBankAccountNumber;
         this.toBankName = toBankName;
         this.toBankAccountNumber = toBankAccountNumber;
         this.moneyAmount = moneyAmount;
         this.firmBankingStatus = firmBankingStatus;
+        this.uuid = UUID;
     }
 
     @Override
